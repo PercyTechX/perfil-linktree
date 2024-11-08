@@ -1,0 +1,79 @@
+/* Aplicando la fuente Roboto */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("./img/estrellas-fondo-negro.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    text-align: center;
+    max-width: 400px;
+    background-color: #000000a1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de perfil */
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Contenedor dinámico */
+#profile-info h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+#profile-info p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Botones de enlaces */
+.link-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button i {
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    transform: scale(1.03);
+    transition: transform 0.3s;
+
+}
+
+/* Diseño responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
